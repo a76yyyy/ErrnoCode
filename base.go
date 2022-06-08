@@ -3,14 +3,16 @@ package code
 //go:generate codegen -type=int
 //go:generate codegen -type=int -doc -output ./error_code_generated.md
 
+const (
+	// ErrSuccess - 200: OK.
+	ErrSuccess int = 0
+)
+
 // 通用: 基本错误
 // Code must start with 1xxxxx
 const (
-	// ErrSuccess - 200: OK.
-	ErrSuccess int = iota + 100001
-
 	// ErrUnknown - 500: Internal server error.
-	ErrUnknown
+	ErrUnknown int = iota + 100001
 
 	// ErrBind - 400: Error occurred while binding the request body to the struct.
 	ErrBind
