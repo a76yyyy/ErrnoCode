@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/marmotedu/errors"
+	"github.com/a76yyyy/errors"
 
-	code "github.com/marmotedu/sample-code"
+	code "github.com/a76yyyy/ErrnoCode"
 )
 
 func main() {
