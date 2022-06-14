@@ -1,4 +1,4 @@
-适配于 `github.com/a76yyyy/ErrnoCode` 错误包的错误码实现。
+针对 `errors` 错误包的错误码实现。
 
 ## Code 设计规范
 
