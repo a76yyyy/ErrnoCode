@@ -42,7 +42,7 @@ Code 代码从 100101 开始，1000 以下为 [errors](github.com/a76yyyy/errors
 - 当引用另一个字段名称时，请在反引号中指定该名称。例如，must be greater than request。
 - 指定不等时，请使用单词而不是符号。例如，must be less than 256、must be greater than or equal to 0 (不要用 larger than、bigger than、more than、higher than)。
 - 指定数字范围时，请尽可能使用包含范围。
-- 建议 Go 1.13 以上，error 生成方式为 fmt.Errorf("module xxx: %w", err)。
+- 建议 Go 1.13 以上，error 生成方式为 `fmt.Errorf("module xxx: %w", err)`。
 - 错误描述用小写字母开头，结尾不要加标点符号。
 
 > 错误信息是直接暴露给用户的，不能包含敏感信息
